@@ -1,0 +1,18 @@
+<!-- Success component to display the messages and remaining balance -->
+<h3 style="font-weight: bold">Success.html</h3>
+
+<div style="padding:30px;">
+  <div class="success-msg">
+<!-- Excutes this if the existing amount  is greater than game price -->
+  <div *ngIf="option=='yes'">
+    <p style="font-weight: bold">Thank You for Playing {{choosedGame}}!! </p>
+    <p style="font-weight: bold">Your Balance is Rs {{price}}</p>
+  </div>
+  <!-- Excutes this if the existing amount  is less than game price -->
+  <div *ngIf="option=='no'">
+      <p style="font-weight: bold">Thank You for using our Online Gaming Site</p>
+      <p style="font-weight: bold">Insufficient Balance to play {{choosedGame}}</p>
+      <p style="font-weight: bold">Please Topup again !!</p>
+    </div>
+    </div>
+    </div>

@@ -1,0 +1,27 @@
+<!--Deceloper: Sairam M,
+Created Date: 06th May 2019,
+Project Name: GameCity,
+Employee Id: 177389
+Module: 2  -->
+
+<div style="padding:30px;">
+<h3 style="font-weight: bold">Play.html</h3>
+
+  <div class="play-list" *ngIf="playList">
+<h3>Welcome to Game City! Your Card Balance Amount is Rs:{{price}}</h3>
+<br>
+<!-- Table for displaying the Game list -->
+<table align="center" class="table table-striped"  *ngFor='let game of playList'>
+  
+  <tbody >
+  <tr>
+  <td style="width:15%">{{game.id}}</td>
+  <td style="width: 50%">{{game.name}}</td>
+  <td style="width: 20%">{{game.price}}</td>
+<td style="width: 75%"><a (click)="playGame(game)">PlayNow</a></td>
+
+</tr>
+</tbody>
+</table>
+</div>
+</div>
